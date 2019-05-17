@@ -1,0 +1,88 @@
+@import "../../styles.scss";
+
+.transparent {
+  background-color: transparent !important;
+}
+
+.top-color-bar {
+    background-color: $accent;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 8px;
+    padding: 0;
+    z-index: 2;
+}
+
+.title-text {
+  display: inline-block;
+  color: mat-color($corporate-app-text);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 150%;
+  margin-right: 5%;
+  margin-left: 1%;
+  margin-top: 2%;
+  text-align: center;
+  font-weight:bold;
+  cursor: pointer;
+  outline: none;
+}
+
+.toolbar-fill-remaining-space {
+  flex: 1 1 auto;
+}
+
+.toolbar-nav-buttons {
+  display: inline-block;
+}
+
+.toolbar-menu {
+  display: none;
+}
+
+.mat-elevation-z2 {
+   position: relative;
+   z-index: 2;
+}
+
+.toolbar-content {
+  margin: 0 auto;
+}
+
+.active-list-item {
+  background-color: mat-color($corporate-app-accent, lighter);
+}
+
+.logo {
+  margin-top: 5px;
+  margin-bottom: 12px;
+}
+
+@media (max-width: 850px) {
+
+  .toolbar-nav-buttons {
+    display: none;
+  }
+
+  .toolbar-menu {
+    display: flex;
+  }
+
+  .toolbar-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .logo {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+}
+
+@media (max-width: 400px) {
+  .title-text {
+    font-size: 100%;
+  }
+}

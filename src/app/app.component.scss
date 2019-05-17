@@ -1,0 +1,22 @@
+
+/* .body-background-image {
+  background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.9)), url('../assets/background-img.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+} */
+
+.body-container {
+ min-height: 100vh; /* will cover the 100% of viewport */
+ overflow: hidden;
+ display: block;
+ position: relative;
+ padding-bottom: 100px; /* height of your footer */
+}
+
+app-footer {
+ position: absolute;
+ bottom: 0;
+ width: 100%;
+}

@@ -1,0 +1,37 @@
+@import "../../styles.scss";
+/*
+.footer-container {
+  height: 175px;
+  margin-top: 30px;
+  width: 100%;
+  background-color: transparentize(mat-color($corporate-app-accent),0.3);
+}
+
+.footer-icon {
+  margin: 10px;
+}
+
+a {
+  outline: none;
+} */
+.footer {
+  display: flex;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.mat-toolbar, .mat-toolbar-row {
+  margin: 0;
+  padding: 0;
+  background-color: transparentize(mat-color($corporate-app-accent),0.3);
+}
+
+.footer-content {
+  margin: 0 auto;
+  font-size: 10px;
+}
+
+.footer-content a:hover {
+  color: inherit;
+}

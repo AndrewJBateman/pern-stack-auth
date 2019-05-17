@@ -17,7 +17,7 @@ Angular 7 app for a portfolio website.
 
 ## General info
 
-Angular Material used.
+Portfolio created using Angular 7 and Angular CLI. Bootstrap
 
 ## Screenshots
 
@@ -31,7 +31,9 @@ Angular Material used.
 
 * [Angular Material v7.3.7](https://material.angular.io/)
 
-* [Bootstrap v4.3.1](https://getbootstrap.com/)
+* [MDBootstrap Angular v7.5.2](https://mdbootstrap.com/)
+
+* [MDBootstrap icons](https://mdbootstrap.com/docs/jquery/content/icons-list/)
 
 ## Setup
 

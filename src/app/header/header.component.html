@@ -1,31 +1,32 @@
-<nav  class="navbar navbar-expand-lg navbar-light"  style="background-color: #b3cbdd;">
-  <a  class="navbar-brand"  href="#">Andrew Bateman</a>
-  <div  class="collapse navbar-collapse"  id="navbarText">
-    <ul  class="navbar-nav">
-      <li  class="nav-item">
-        <a  class="nav-link"  href="/home">Home</a>
-      </li>
-      <li  class="nav-item">
-        <a  class="nav-link"  href="/about">About</a>
-      </li>
-      <li  class="nav-item">
-        <a  class="nav-link"  href="/projects">Projects</a>
-      </li>
-      <li  class="nav-item">
-        <a  class="nav-link"  href="/skills">Skills</a>
-      </li>
-      <li  class="nav-item">
-        <a  class="nav-link"  href="/experience">Experience</a>
-      </li>
-      <li  class="nav-item">
-        <a  class="nav-link"  href="/education">Educaton</a>
-      </li>
-      <li  class="nav-item">
-        <a  class="nav-link"  href="/contact">Contact</a>
-      </li>
-      <li  class="nav-item">
-        <a  class="nav-link"  href="/resume">Resume</a>
-      </li>
-    </ul>
+<div class="top-color-bar"></div>
+
+<mat-toolbar class="mat-elevation-z0 transparent" style="min-height: 80px">
+  <div class="toolbar-content">
+
+
+
+    <span class="title-text" routerLink="/home">Andrew Bateman</span>
+    <div class="toolbar-nav-buttons">
+      <button mat-button color="accent" routerLinkActive="active-list-item" routerLink="/about">About</button>
+      <button mat-button color="accent" routerLinkActive="active-list-item" routerLink="/projects">Projects</button>
+      <button mat-button color="accent" routerLinkActive="active-list-item" routerLink="/skills">Skills</button>
+      <button mat-button color="accent" routerLinkActive="active-list-item" routerLink="/vitae">Vitae</button>
+			<button mat-button color="accent" routerLinkActive="active-list-item" routerLink="/contact">Contact</button>
+    </div>
+
+    <!-- Only used on smaller screens (phones) -->
+    <div class="toolbar-menu">
+      <button mat-button [matMenuTriggerFor]="menu">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item color="accent" routerLinkActive="active-list-item" routerLink="/about">About</button>
+        <button mat-menu-item color="accent" routerLinkActive="active-list-item" routerLink="/projects">Projects</button>
+        <button mat-menu-item color="accent" routerLinkActive="active-list-item" routerLink="/skills">Skills</button>
+        <button mat-menu-item color="accent" routerLinkActive="active-list-item" routerLink="/vitae">Vitae</button>
+			  <button mat-menu-item color="accent" routerLinkActive="active-list-item" routerLink="/contact">Contact</button>
+      </mat-menu>
+    </div>
+
   </div>
-</nav>
+</mat-toolbar>

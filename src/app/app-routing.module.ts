@@ -5,12 +5,16 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { SkillsComponent } from './skills/skills.component';
-import { ExperienceComponent } from './experience/experience.component';
-import { EducationComponent } from './education/education.component';
+import { VitaeComponent } from './vitae/vitae.component';
 import { ContactComponent } from './contact/contact.component';
 import { ResumeComponent } from './resume/resume.component';
 
 const routes: Routes = [
+{
+path: '',
+redirectTo: '/home',
+pathMatch: 'full'
+},
 {
 path:  'home',
 component:  HomeComponent
@@ -28,20 +32,12 @@ path:  'skills',
 component:  SkillsComponent
 },
 {
-path:  'experience',
-component:  ExperienceComponent
-},
-{
-path:  'education',
-component:  EducationComponent
+path:  'vitae',
+component:  VitaeComponent
 },
 {
 path:  'contact',
 component:  ContactComponent
-},
-{
-path:  'resume',
-component:  ResumeComponent
 }
 ];
 
