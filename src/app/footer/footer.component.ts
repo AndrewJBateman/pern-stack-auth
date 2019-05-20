@@ -10,7 +10,7 @@ export class FooterComponent {
 	constructor() { }
 
 
-  openBottomSheet() {
+	openBottomSheet() {
 
-  }
+	}
 }

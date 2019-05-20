@@ -21,10 +21,12 @@ a {
   padding: 0px;
 }
 
-.mat-toolbar, .mat-toolbar-row {
-  margin: 0;
-  padding: 0;
+.footer-container {
   background-color: transparentize(mat-color($corporate-app-accent),0.3);
+}
+
+.mat-toolbar, .mat-toolbar-row {
+  padding: 0 auto;
 }
 
 .footer-content {

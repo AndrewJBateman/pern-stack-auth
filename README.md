@@ -1,6 +1,6 @@
 # Portfolio Angular
 
-Angular 7 app for a portfolio website.
+Angular 7 app using Angular Bootstrap to create a portfolio website.
 
 *** Note: to open web links in a new window use: _ctrl+click on link_**
 
@@ -17,11 +17,33 @@ Angular 7 app for a portfolio website.
 
 ## General info
 
-Portfolio created using Angular 7 and Angular CLI. Bootstrap
+* Portfolio created using Angular 7 and Angular CLI.
+
+* Pages are responsive.
+
+## Sections info
+
+* Header: Add logo on left.
+
+* Home:
+
+* About:
+
+* **Projects:** Bootstrap card-deck with cards to display project data using data-binding from an array of projects based on a Project model. Cards are sized so up to 4 will show on a row before wrapping to the next line. Image sized to 16:9 ratio which for width 288px = height 162px.
+
+* Skills:
+
+* **Vitae:** To contain list of experience and education, also using Bootstrap cards but page width an collapsable.
+
+* Contact:
+
+* CV Download:
+
+* Footer: includes icons with links to email me, linkedin and github repos.
 
 ## Screenshots
 
-![Example screenshot](./img/home-screen.png)
+![Example screenshot](./img/Projects.png)
 
 ## Technologies
 
@@ -47,23 +69,37 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 ## Code Examples
 
-tba
+```typescript
+export class Project {
+  title: string;
+  img: { src: string, alt: string };
+  content: string;
+  tools: { prefix: string, icon: string } [];
+  github: string;
+  url: string;
+}
+
+```
 
 ## Features
 
-* tba
+* [Angular Material Theming](https://material.angular.io/guide/theming),based on [Material Design spec](https://material.io/archive/guidelines/style/color.html#color-color-palette) colors are used for primary, accent, warning, foregraound and background palletes etc.
+
+* Responsive
 
 ## Status & To-Do List
 
-* Status: In developement. All components createda and routing works to all pages.
+* Status: In development. Compiles. All components created and routing works to all pages. HEader, Footer, Projects pages initial info added.
 
-* To-Do: add angular-material and side-nav then onto site content.
+* To-Do: site content: about page...add ionicons - see article?
 
 ## Inspiration
 
 * [website by Julian Rubiano](http://www.julienrubiano.fr/)
 
 * [website by Jaxon Wright](https://jaxonwright.com/)
+
+* [Medium article by Tomas Trajan: The complete guide to Angular Material Themes](https://medium.com/@tomastrajan/the-complete-guide-to-angular-material-themes-4d165a9d24d1)
 
 ## Contact
 

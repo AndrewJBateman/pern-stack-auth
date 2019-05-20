@@ -11,9 +11,9 @@ $mat-white: (
 );
 
 $corporate-app-primary: mat-palette($mat-white, 50);
-$corporate-app-accent:  mat-palette($mat-blue, 800, 100, 900);
+$corporate-app-accent:  mat-palette($mat-green, 800, 100, 900);
 $corporate-app-text:  mat-palette($mat-blue, 900);
-$corporate-app-warn:    mat-palette($mat-red);
+$corporate-app-warn: mat-palette($mat-red);
 $corporate-app-theme: mat-light-theme($corporate-app-primary, $corporate-app-accent, $corporate-app-warn);
 
 $primary: mat-color($corporate-app-primary);

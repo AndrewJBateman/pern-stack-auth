@@ -16,7 +16,8 @@
 
 .title-text {
   display: inline-block;
-  color: mat-color($corporate-app-text);
+  // color: mat-color($corporate-app-text);
+  color: $accent;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 150%;
   margin-right: 5%;

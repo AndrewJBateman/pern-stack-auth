@@ -31,32 +31,33 @@
       </div>
   </footer>
 </div> -->
-<footer>
-  <mat-toolbar color="primary">
+<div class="footer-container">
+<footer class="mat-primary">
     <mat-toolbar-row>
-      
+      <div class="row"></div>
+
       <div class="footer-content">
         <a href="mailto:gomezbateman@yahoo.com" mat-button target="_blank" rel="noreferrer">
-          <mdb-icon far icon="envelope" size="2x" class="white-text footer-icon"></mdb-icon>
+          <mdb-icon far icon="envelope" size="2x"></mdb-icon>
         </a>
       </div>
 
       <a class="footer-content">
         <a href="https://www.linkedin.com/in/andrew-bateman/" mat-button target="_blank" rel="noreferrer">
-          <mdb-icon fab icon="linkedin" size="2x" class="white-text footer-icon"></mdb-icon>
+          <mdb-icon fab icon="linkedin" size="2x"></mdb-icon>
         </a>
       </a>
 
       <div class="footer-content">
         <a href="https://github.com/AndrewJBateman" mat-button target="_blank" rel="noreferrer">
-          <mdb-icon fab icon="github" size="2x" class="white-text footer-icon"></mdb-icon>
+          <mdb-icon fab icon="github" size="2x"></mdb-icon>
         </a>
       </div>
 
-      <div class="footer-content white-text footer-icon">
-        <button mat-button (click)="openBottomSheet()"><mdb-icon fas icon="file-download" size="2x"></mdb-icon> Download CV</button>
+      <div class="footer-content">
+        <button mat-button (click)="openBottomSheet()"><mdb-icon fas icon="file-download" size="2x"></mdb-icon> CV</button>
       </div>
 
     </mat-toolbar-row>
-  </mat-toolbar>
 </footer>
+</div>
