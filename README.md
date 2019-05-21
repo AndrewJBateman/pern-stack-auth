@@ -35,15 +35,16 @@ Angular 7 app using Angular Bootstrap to create a portfolio website.
 
 * **Vitae:** To contain list of experience and education, also using Bootstrap cards but page width an collapsable.
 
-* Contact:
+* **Contact:** Single Boostrap card with links to email, github and linkedin.
 
 * CV Download:
 
-* Footer: includes icons with links to email me, linkedin and github repos.
+* Footer: Icons with links to email me, linkedin and github repos.
 
 ## Screenshots
 
 ![Example screenshot](./img/Projects.png)
+![Example screenshot](./img/Contact.png)
 
 ## Technologies
 
