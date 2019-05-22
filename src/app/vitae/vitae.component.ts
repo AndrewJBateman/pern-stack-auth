@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Experience }
 
 @Component({
 	selector: 'app-vitae',

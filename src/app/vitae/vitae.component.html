@@ -1,3 +1,19 @@
-<p>
-  vitae works!
-</p>
+<div class="container-fluid">
+  <h2 class="section-header">Experience</h2>
+
+  <mdb-card  *ngFor="let experience of experiences">
+    <mdb-card-header>{{ experience.position }}</mdb-card-header>
+    <mdb-card-body>
+      <mdb-card-title>
+        <h5>Special title treatment</h5>
+      </mdb-card-title>
+      <mdb-card-text>With supporting text below as a natural lead-in to additional content.</mdb-card-text>
+      <a href="" mdbBtn color="primary">Go somewhere!</a>
+    </mdb-card-body>
+  </mdb-card>
+
+
+  <br>
+  <h2 class="section-header">Experience</h2>
+
+</div>

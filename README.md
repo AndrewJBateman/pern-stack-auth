@@ -23,23 +23,23 @@ Angular 7 app using Angular Bootstrap to create a portfolio website.
 
 ## Sections info
 
-* Header: Add logo on left.
+* **Header:** Add logo on left. Change to MDB navbar.
 
-* Home:
+* **Home:**
 
-* About:
+* **About:** 2 column layout with mat-cards for photos on left taking 3/12 width and a 9/12 width column for text.
 
 * **Projects:** Bootstrap card-deck with cards to display project data using data-binding from an array of projects based on a Project model. Cards are sized so up to 4 will show on a row before wrapping to the next line. Image sized to 16:9 ratio which for width 288px = height 162px.
 
-* Skills:
+* **Skills:**
 
-* **Vitae:** To contain list of experience and education, also using Bootstrap cards but page width an collapsable.
+* **Vitae:** To contain list of experience and education, also using Bootstrap cards.
 
 * **Contact:** Single Boostrap card with links to email, github and linkedin.
 
-* CV Download:
+* **CV Download:**
 
-* Footer: Icons with links to email me, linkedin and github repos.
+* **Footer:** Icons with links to email me, linkedin and github repos.
 
 ## Screenshots
 

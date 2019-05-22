@@ -4,41 +4,6 @@
   color: $accent;
 }
 
-#contact-card {
-  width: 400px;
-  margin-top: 30px;
-  font-family: 'Roboto Mono', monospace, Helvetica, Arial, sans-serif;
-  font-size: 13px;
-  letter-spacing: 1px;
-}
-
-mdb-icon, p{
-  margin: 15px 10px;
-}
-
-.fa-icon {
-  display: block;
-}
-
-.flex-center {
-  display: flex;
-  justify-content: center;
-}
-
-.flex-align-center {
-  display: flex;
-  align-items: center;
-  padding-left: 1rem;
-}
-
-.color-hover {
-  color: #61caff;
-}
-
-.bold-font {
-  font-weight: 700;
-}
-
-.wider-letter-space {
-  letter-spacing: 2px;
+mdb-card-img {
+  border: 10px solid #ffffff;
 }

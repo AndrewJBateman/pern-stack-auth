@@ -1,51 +1,36 @@
-<br><br>
-<h4 class="text-center section-header">Contact Me</h4>
-<div class="flex-center">
-  <mdb-card id="contact-card">
-    <a
-      (mouseenter)="lineHover.onEmail = true;"
-      (mouseleave)="lineHover.onEmail = false;"
-      class="flex-align-center"
-      href="mailto:gomezbateman@yahoo.com">
-      <mdb-icon
-        far icon="envelope" size="2x"
-        [ngClass]="{'color-hover': lineHover.onEmail}"
-      ></mdb-icon>
-      <p
-        class="wider-letter-space"
-        [ngClass]="{'color-hover bold-font': lineHover.onEmail}">
-        email me: gomezbateman@yahoo.com
-      </p>
-    </a>
-    <a
-      (mouseenter)="lineHover.onGithub = true;"
-      (mouseleave)="lineHover.onGithub = false;"
-      class="flex-align-center"
-      href="https://github.com/AndrewJBateman"
-      target="_blank">
-      <mdb-icon
-        fab icon="github" size="2x"
-        [ngClass]="{'color-hover': lineHover.onGithub}"
-      ></mdb-icon>
-      <p
-        [ngClass]="{'color-hover bold-font': lineHover.onGithub}">
-        Check out my Github repositories.
-      </p>
-    </a>
-    <a
-      (mouseenter)="lineHover.onLinkedIn = true;"
-      (mouseleave)="lineHover.onLinkedIn = false;"
-      class="flex-align-center"
-      href="https://www.linkedin.com/in/andrew-bateman/"
-      target="_blank">
-      <mdb-icon
-        fab icon="linkedin" size="2x"
-        [ngClass]="{'color-hover': lineHover.onLinkedIn}">
-      </mdb-icon>
-      <p
-        [ngClass]="{'color-hover bold-font': lineHover.onLinkedIn}">
-        Connect with me on LinkedIn.
-      </p>
-    </a>
-  </mdb-card>
-</div>
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-header">About</h2>
+    </div>
+    <div class="section-body">
+      <div class="row">
+        <div class="col-sm-3">
+          <mdb-card>
+            <mdb-card-img mat-card-image src="assets/images/about-profile.jpg"></mdb-card-img>
+            <mat-card-content>
+            </mat-card-content>
+          </mdb-card>
+        </div>
+        <div class="col-sm-9">
+          <p>
+            about text 
+          </p>
+          <p>
+            about text 
+          </p>
+          <p>
+            about text 
+          </p>
+          <p>
+            about text
+          </p>
+          <p>
+            about text
+          </p>
+          <p>
+            about text
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
