@@ -1,19 +1,38 @@
-<div class="container-fluid">
-  <h2 class="section-header">Experience</h2>
+<div class="container">
+  <h4 class="section-header">Experience</h4>
 
   <mdb-card  *ngFor="let experience of experiences">
-    <mdb-card-header>{{ experience.position }}</mdb-card-header>
+    <mdb-card-header class="mdb-color lighten-5 pt-3">
+      <ul class="list-unstyled list-inline">
+        <li class="list-inline-item pr-4">{{ experience.logo }}</li>
+        <li class="list-inline-item pr-4">{{ experience.company | uppercase }}</li>
+        <li class="list-inline-item pr-4">{{ experience.position }}</li>
+      </ul>
+    </mdb-card-header>
+
     <mdb-card-body>
-      <mdb-card-title>
-        <h5>Special title treatment</h5>
+      <mdb-card-title> 
+        <p>{{ experience.companydesc }}</p>
       </mdb-card-title>
-      <mdb-card-text>With supporting text below as a natural lead-in to additional content.</mdb-card-text>
-      <a href="" mdbBtn color="primary">Go somewhere!</a>
+      <p class="bullets">
+        {{ experience.workdesc1 }}<br>
+        {{ experience.workdesc2 }}<br>
+        {{ experience.workdesc3 }}<br>
+        {{ experience.workdesc4 }}
+      </p>
     </mdb-card-body>
+
+    <mdb-card-footer class="mdb-color lighten-5 text-left pt-3 footer">
+      <ul class="list-unstyled list-inline">
+        <li class="list-inline-item pr-4">{{ experience.dates }} | {{ experience.location }}</li>
+        <li class="list-inline-item pr-4"><button href=""type="button" class="btn btn-success btn-sm">More info.</button></li>
+      </ul>
+    </mdb-card-footer>
+  <br>
   </mdb-card>
 
-
   <br>
-  <h2 class="section-header">Experience</h2>
+  <hr>
+  <h4 class="section-header">Qualifications</h4>
 
 </div>

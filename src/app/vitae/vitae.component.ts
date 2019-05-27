@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Experience }
+import { EXPERIENCES } from './experiences';
 
 @Component({
 	selector: 'app-vitae',
@@ -7,6 +7,7 @@ import { Experience }
 	styleUrls: ['./vitae.component.scss']
 })
 export class VitaeComponent implements OnInit {
+	experiences = EXPERIENCES;
 
 	constructor() { }
 

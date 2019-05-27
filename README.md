@@ -23,7 +23,7 @@ Angular 7 app using Angular Bootstrap to create a portfolio website.
 
 ## Sections info
 
-* **Header:** Add logo on left. Change to MDB navbar.
+* **Header:** Add logo on left. Change to MDB navbar. Should be sticky.
 
 * **Home:**
 
