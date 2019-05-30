@@ -15,8 +15,9 @@ import { SkillsComponent } from './skills/skills.component';
 import { ContactComponent } from './contact/contact.component';
 import { ResumeComponent } from './resume/resume.component';
 import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
-import { VitaeComponent } from './vitae/vitae.component';
+import { ExperienceComponent } from './experience/experience.component';
+import { EducationComponent } from './education/education.component';
+import { OtherComponent } from './other/other.component';
 
 @NgModule({
 	declarations: [
@@ -28,8 +29,9 @@ import { VitaeComponent } from './vitae/vitae.component';
 		ContactComponent,
 		ResumeComponent,
 		HeaderComponent,
-		FooterComponent,
-		VitaeComponent
+		ExperienceComponent,
+		EducationComponent,
+		OtherComponent
 	],
 	imports: [
 		BrowserModule,

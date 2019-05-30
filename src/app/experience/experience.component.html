@@ -1,8 +1,9 @@
 <div class="container">
   <h4 class="section-header">Experience</h4>
 
-  <mdb-card  *ngFor="let experience of experiences">
-    <mdb-card-header class="mdb-color lighten-5 pt-3">
+	<div class="pb-3">
+  <mdb-card *ngFor="let experience of experiences">
+    <mdb-card-header class="mdb-color lighten-5">
       <ul class="list-unstyled list-inline">
         <li class="list-inline-item pr-4">{{ experience.logo }}</li>
         <li class="list-inline-item pr-4">{{ experience.company | uppercase }}</li>
@@ -11,7 +12,7 @@
     </mdb-card-header>
 
     <mdb-card-body>
-      <mdb-card-title> 
+      <mdb-card-title>
         <p>{{ experience.companydesc }}</p>
       </mdb-card-title>
       <p class="bullets">
@@ -22,15 +23,14 @@
       </p>
     </mdb-card-body>
 
-    <mdb-card-footer class="mdb-color lighten-5 text-left pt-3 footer">
+    <mdb-card-footer class="mdb-color lighten-5 text-left footer">
       <ul class="list-unstyled list-inline">
         <li class="list-inline-item pr-4">{{ experience.dates }} | {{ experience.location }}</li>
         <li class="list-inline-item pr-4"><button href=""type="button" class="btn btn-success btn-sm">More info.</button></li>
       </ul>
     </mdb-card-footer>
-  <br>
   </mdb-card>
-
+	</div>
   <br>
   <hr>
   <h4 class="section-header">Qualifications</h4>

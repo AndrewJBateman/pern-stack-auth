@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { EXPERIENCES } from './experiences';
 
 @Component({
-	selector: 'app-vitae',
-	templateUrl: './vitae.component.html',
-	styleUrls: ['./vitae.component.scss']
+	selector: 'app-experience',
+	templateUrl: './experience.component.html',
+	styleUrls: ['./experience.component.scss']
 })
-export class VitaeComponent implements OnInit {
+export class ExperienceComponent implements OnInit {
 	experiences = EXPERIENCES;
 
 	constructor() { }

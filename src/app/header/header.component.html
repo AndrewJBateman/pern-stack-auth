@@ -1,33 +1,84 @@
-<!-- <div class="top-color-bar"></div> -->
-<!-- <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark indigo"> -->
-<mat-toolbar class="mat-elevation-z0 transparent" style="min-height: 60px">
-  <div class="toolbar-content">
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-light blue-grey lighten-5 fixed-top" [containerInside]="false">
 
+  <!-- Navbar brand -->
+  <mdb-navbar-brand><a class="navbar-brand active" routerLinkActive="active-list-item" routerLink="/home">AB</a><span class="sr-only">(current)</span></mdb-navbar-brand>
 
+  <!-- Collapsible content -->
+  <links>
 
-    <span class="title-text" routerLink="/home">AB</span>
-    <div class="toolbar-nav-buttons">
-      <button mat-button color="accent" routerLinkActive="active-list-item" routerLink="/about">About</button>
-      <button mat-button color="accent" routerLinkActive="active-list-item" routerLink="/projects">Projects</button>
-      <button mat-button color="accent" routerLinkActive="active-list-item" routerLink="/skills">Skills</button>
-      <button mat-button color="accent" routerLinkActive="active-list-item" routerLink="/vitae">Vitae</button>
-			<button mat-button color="accent" routerLinkActive="active-list-item" routerLink="/contact">Contact</button>
-    </div>
+    <!-- Links -->
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link waves-light" routerLinkActive="active-list-item" routerLink="/about" mdbWavesEffect>About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link waves-light" routerLinkActive="active-list-item" routerLink="/projects" mdbWavesEffect>Projects</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link waves-light" routerLinkActive="active-list-item" routerLink="/skills" mdbWavesEffect>Skills</a>
+      </li>
 
-    <!-- Only used on smaller screens (phones) -->
-    <div class="toolbar-menu">
-      <button mat-button [matMenuTriggerFor]="menu">
-        <mat-icon>menu</mat-icon>
-      </button>
-      <mat-menu #menu="matMenu">
-        <button mat-menu-item color="accent" routerLinkActive="active-list-item" routerLink="/about">About</button>
-        <button mat-menu-item color="accent" routerLinkActive="active-list-item" routerLink="/projects">Projects</button>
-        <button mat-menu-item color="accent" routerLinkActive="active-list-item" routerLink="/skills">Skills</button>
-        <button mat-menu-item color="accent" routerLinkActive="active-list-item" routerLink="/vitae">Vitae</button>
-			  <button mat-menu-item color="accent" routerLinkActive="active-list-item" routerLink="/contact">Contact</button>
-      </mat-menu>
-    </div>
+      <!-- Dropdown -->
+      <li class="nav-item dropdown" dropdown>
+        <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
+          Vitae<span class="caret"></span></a>
+        <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary navbar-light blue-grey lighten-5" role="menu">
+          <a routerLink="/experience" class="dropdown-item waves-light" mdbWavesEffect href="#">Experience</a>
+          <a routerLink="/education" class="dropdown-item waves-light" mdbWavesEffect href="#">Education</a>
+          <a routerLink="/other" class="dropdown-item waves-light" mdbWavesEffect href="#">Other</a>
+        </div>
+      </li>
 
-  </div>
-<!-- </mdb-navbar> -->
-</mat-toolbar>
+      <li class="nav-item">
+        <a class="nav-link waves-light" routerLinkActive="active-list-item" routerLink="/contact" mdbWavesEffect>Contact</a>
+      </li>
+
+    </ul>
+    <!-- Links -->
+
+    <ul class="navbar-nav ml-auto nav-flex-icons">
+
+      <li class="nav-item">
+        <a mdbBtn color="info" size="sm" rounded="true" href="https://www.linkedin.com/in/andrew-bateman/" target="_blank" rel="noreferrer">
+          <mdb-icon fab icon="linkedin" size="2x"></mdb-icon>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a mdbBtn color="info" size="sm" rounded="true" href="https://github.com/AndrewJBateman" target="_blank" rel="noreferrer">
+          <mdb-icon fab icon="github" size="2x"></mdb-icon>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a mdbBtn color="info" size="sm" rounded="true" (click)="openBottomSheet()">
+          <mdb-icon fas icon="file-download" size="2x"></mdb-icon> CV
+        </a>
+      </li>
+      <li class="nav-item">
+        <a mdbBtn color="info" size="sm" rounded="true" href="mailto:gomezbateman@yahoo.com" target="_blank" rel="noreferrer">
+          <mdb-icon far icon="envelope" size="2x"></mdb-icon>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a mdbBtn color="info" size="sm" rounded="true">
+          <div class="btn-group " mdbDropdown>
+            <mdb-icon fas icon="globe" size="2x" mdbDropdownToggle></mdb-icon>
+            <div class="dropdown-menu dropdown-menu-right dropdown-default navbar-light blue-grey lighten-5">
+              <a class="dropdown-item" href="#" (click)="setLang('en')">
+                <mdb-icon far icon="flag"></mdb-icon>EN
+              </a>
+              <a class="dropdown-item" href="#" (click)="setLang('sp')">
+                <mdb-icon far icon="flag"></mdb-icon>SP
+              </a>
+              <a class="dropdown-item" href="#" (click)="setLang('fr')">
+                <mdb-icon far icon="flag"></mdb-icon>FR
+              </a>
+            </div>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </links>
+  <!-- Collapsible content -->
+
+</mdb-navbar>
