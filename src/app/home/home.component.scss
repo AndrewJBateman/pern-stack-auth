@@ -4,4 +4,16 @@
   color: $accent;
 }
 
-.container { padding-top: 90px; }
+
+.container { padding-top: 85px; }
+
+
+@media (max-width: 400px) {
+	.container { padding-top: 70px; }
+
+/*   fa-flag {
+    padding: 10px;
+  } */
+
+}
+

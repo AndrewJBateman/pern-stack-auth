@@ -15,6 +15,9 @@
         <a class="nav-link waves-light" routerLinkActive="active-list-item" routerLink="/projects" mdbWavesEffect>Projects</a>
       </li>
       <li class="nav-item">
+        <a class="nav-link waves-light" routerLinkActive="active-list-item" routerLink="/articles" mdbWavesEffect>Articles</a>
+      </li>
+      <li class="nav-item">
         <a class="nav-link waves-light" routerLinkActive="active-list-item" routerLink="/skills" mdbWavesEffect>Skills</a>
       </li>
 
@@ -39,39 +42,39 @@
     <ul class="navbar-nav ml-auto nav-flex-icons">
 
       <li class="nav-item">
-        <a mdbBtn color="info" size="sm" rounded="true" href="https://www.linkedin.com/in/andrew-bateman/" target="_blank" rel="noreferrer">
-          <mdb-icon fab icon="linkedin" size="2x"></mdb-icon>
+        <a mdbBtn color="info" class="btn-narrow" size="sm" href="https://www.linkedin.com/in/andrew-bateman/" target="_blank" rel="noreferrer">
+          <mdb-icon class="center" fab icon="linkedin" size="2x"></mdb-icon>
         </a>
       </li>
       <li class="nav-item">
-        <a mdbBtn color="info" size="sm" rounded="true" href="https://github.com/AndrewJBateman" target="_blank" rel="noreferrer">
+        <a mdbBtn color="info" class="btn btn-narrow" size="sm" href="https://github.com/AndrewJBateman" target="_blank" rel="noreferrer">
           <mdb-icon fab icon="github" size="2x"></mdb-icon>
         </a>
       </li>
-      <li class="nav-item">
-        <a mdbBtn color="info" size="sm" rounded="true" (click)="openBottomSheet()">
+      <li class="nav-item" >
+        <a mdbBtn color="info" class="btn-narrow cv" size="sm" (click)="openBottomSheet()">
           <mdb-icon fas icon="file-download" size="2x"></mdb-icon> CV
         </a>
       </li>
       <li class="nav-item">
-        <a mdbBtn color="info" size="sm" rounded="true" href="mailto:gomezbateman@yahoo.com" target="_blank" rel="noreferrer">
+        <a mdbBtn color="info" class="btn-narrow" size="sm" href="mailto:gomezbateman@yahoo.com" target="_blank" rel="noreferrer">
           <mdb-icon far icon="envelope" size="2x"></mdb-icon>
         </a>
       </li>
 
       <li class="nav-item">
-        <a mdbBtn color="info" size="sm" rounded="true">
-          <div class="btn-group " mdbDropdown>
+        <a mdbBtn class="btn-narrow" color="info" size="sm">
+          <div class="btn-group" mdbDropdown>
             <mdb-icon fas icon="globe" size="2x" mdbDropdownToggle></mdb-icon>
-            <div class="dropdown-menu dropdown-menu-right dropdown-default navbar-light blue-grey lighten-5">
+            <div class="dropdown-menu dropdown-menu-right dropdown-default navbar-light blue-grey lighten-5 language">
               <a class="dropdown-item" href="#" (click)="setLang('en')">
-                <mdb-icon far icon="flag"></mdb-icon>EN
+                <mdb-icon far icon="flag" class="flag"></mdb-icon> EN
               </a>
               <a class="dropdown-item" href="#" (click)="setLang('sp')">
-                <mdb-icon far icon="flag"></mdb-icon>SP
+                <mdb-icon far icon="flag" class="flag"></mdb-icon> SP
               </a>
               <a class="dropdown-item" href="#" (click)="setLang('fr')">
-                <mdb-icon far icon="flag"></mdb-icon>FR
+                <mdb-icon far icon="flag" class="flag"></mdb-icon> FR
               </a>
             </div>
           </div>

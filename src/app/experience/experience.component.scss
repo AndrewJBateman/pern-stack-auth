@@ -16,4 +16,8 @@ ul, p {
 /* .btn {
 	font-size: 14px;
 } */
-.container { padding-top: 90px; }
+.container { padding-top: 80px; }
+
+@media (max-width: 400px) {
+	.container { padding-top: 70px; }
+}

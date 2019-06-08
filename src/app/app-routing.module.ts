@@ -10,6 +10,7 @@ import { EducationComponent } from './education/education.component';
 import { ContactComponent } from './contact/contact.component';
 import { ResumeComponent } from './resume/resume.component';
 import { OtherComponent } from './other/other.component';
+import { ArticlesComponent } from './articles/articles.component';
 
 const routes: Routes = [
 {
@@ -28,6 +29,10 @@ component:  AboutComponent
 {
 path:  'projects',
 component:  ProjectsComponent
+},
+{
+path:  'articles',
+component:  ArticlesComponent
 },
 {
 path:  'skills',

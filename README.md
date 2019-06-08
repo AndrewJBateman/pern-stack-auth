@@ -1,6 +1,6 @@
 # Portfolio Angular
 
-Angular 7 app using Angular Bootstrap to create a portfolio website.
+Angular 8 app using Angular Bootstrap to create a portfolio website.
 
 *** Note: to open web links in a new window use: _ctrl+click on link_**
 
@@ -17,29 +17,29 @@ Angular 7 app using Angular Bootstrap to create a portfolio website.
 
 ## General info
 
-* Portfolio created using Angular 7 and Angular CLI.
-
-* Pages are responsive.
+* Responsive - media sizes for PC and phone-sized screens (max width 400px).
 
 ## Sections info
 
-* **Header:** Add logo on left. Working nav-bar.
+* **Header:** Working nav-bar. Add logo on left.
 
-* **Home:** Add something interesting
+* **Home:** Empty. Add something interesting: star project, photo.., newsfeed,
 
-* **About:** 2 column layout with mat-cards for photos on left taking 3/12 width and a 9/12 width column for text.
+* **About:** 2 column layout with mat-cards for photos on left taking 3/12 width and a 9/12 width column for text. Add ionicons - see article?
 
-* **Projects:** Bootstrap card-deck with cards to display project data using data-binding from an array of projects based on a Project model. Cards are sized so up to 4 will show on a row before wrapping to the next line. Image sized to 16:9 ratio which for width 288px = height 162px.
+* **Projects:** Bootstrap card-deck with cards to display project data using data-binding from an array of projects based on a Project model. Cards are sized so up to 4 will show on a row before wrapping to the next line. Image sized to 16:9 ratio which for width 288px = height 162px. Content to be replaced.
 
-* **Skills:** part-done. mdb-cards under headings: Programmer, Engineer (tba: Technical Writer).
+* **Articles:** Bootstrap card-deck with cards to display article data using data-binding from an array of articles based on an Article model. Cards are sized so up to 4 will show on a row before wrapping to the next line. Image sized to 16:9 ratio which for width 288px = height 162px. Content to be replaced.
 
-* **vitae dropdown: experience:** part-done. List using Bootstrap cards.
+* **Skills:** Part-done. mdb-cards under headings: Programmer, Engineer (tba: Technical Writer). Add data-binding.
+
+* **vitae dropdown: experience:** Part-done. List using Bootstrap cards.
 
 * **vitae dropdown: education:** tba. List using Bootstrap cards.
 
 * **vitae dropdown: other:** tba. List using Bootstrap cards.
 
-* **Contact:** Single Boostrap card with links to email, github and linkedin.
+* **Contact:** Single Boostrap card with links to email, github and linkedin. Add photo or background image.
 
 * **CV Download:** tba
 
@@ -50,13 +50,13 @@ Angular 7 app using Angular Bootstrap to create a portfolio website.
 
 ## Technologies
 
-* [Angular CLI v7.3.9](https://github.com/angular/angular-cli)
+* [Angular CLI v8.0.1](https://github.com/angular/angular-cli)
 
-* [Angular framework v7.2.0](https://angular.io/)
+* [Angular framework v8.0.0](https://angular.io/)
 
-* [Angular Material v7.3.7](https://material.angular.io/)
+* [Angular Material v8.0.0](https://material.angular.io/)
 
-* [MDBootstrap Angular v7.5.2](https://mdbootstrap.com/)
+* [MDBootstrap Angular v7.5.3](https://mdbootstrap.com/) & [github repo: Angular-Bootstrap-with-Material-Design](https://github.com/mdbootstrap/Angular-Bootstrap-with-Material-Design)
 
 * [MDBootstrap icons](https://mdbootstrap.com/docs/jquery/content/icons-list/)
 
@@ -92,7 +92,7 @@ export class Project {
 
 * Status: In development. Compiles. All components created and routing works to all pages. HEader, Footer, Projects pages initial info added.
 
-* To-Do: site content: about page...add ionicons - see article?
+* To-Do: see Sections Info above.
 
 ## Inspiration
 

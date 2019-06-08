@@ -4,4 +4,20 @@
   color: $accent;
 }
 
-.container { padding-top: 90px; }
+ul, p {
+	margin: 0;
+}
+
+.bullets {
+	margin: 10px 0 0;
+	font-size: 14px;
+}
+
+/* .btn {
+	font-size: 14px;
+} */
+.container { padding-top: 80px; }
+
+@media (max-width: 400px) {
+	.container { padding-top: 70px; }
+}

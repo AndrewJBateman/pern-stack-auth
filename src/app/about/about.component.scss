@@ -8,3 +8,7 @@ mdb-card-img {
   border: 10px solid #ffffff;
 }
 .container { padding-top: 90px; }
+
+@media (max-width: 400px) {
+	.container { padding-top: 70px; }
+}

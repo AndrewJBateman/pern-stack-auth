@@ -1,6 +1,6 @@
 @import "../../styles.scss";
 
-.transparent {
+/* .transparent {
   background-color: transparent !important;
 }
 
@@ -48,7 +48,7 @@
 
 .toolbar-content {
   margin: 0 auto;
-}
+} */
 
 .active-list-item {
   background-color: mat-color($corporate-app-accent, lighter);
@@ -59,7 +59,11 @@
   margin-bottom: 12px;
 }
 
-@media (max-width: 850px) {
+/* .btn {
+  padding: 1px;
+}
+ */
+/* @media (max-width: 850px) {
 
   .toolbar-nav-buttons {
     display: none;
@@ -81,9 +85,16 @@
   }
 
 }
-
+ */
 @media (max-width: 400px) {
   .title-text {
     font-size: 100%;
+  }
+	.btn-narrow {
+    padding: 15px;
+  }
+
+  .cv {
+    height: 53px;
   }
 }
