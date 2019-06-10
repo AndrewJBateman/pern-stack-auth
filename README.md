@@ -31,17 +31,17 @@ Angular 8 app using Angular Bootstrap to create a portfolio website.
 
 * **Articles:** Bootstrap card-deck with cards to display article data using data-binding from an array of articles based on an Article model. Cards are sized so up to 4 will show on a row before wrapping to the next line. Image sized to 16:9 ratio which for width 288px = height 162px. Content to be replaced.
 
-* **Skills:** Part-done. mdb-cards under headings: Programmer, Engineer (tba: Technical Writer). Add data-binding.
+* **Skills:** Bootstrap card-deck with cards to display article data using data-binding from an array of skills based on a Skill model. Cards are sized so up to 4 will show on a row before wrapping to the next line. Work out how to add 2nd level so 1 group of cards under Programming and Engineering - 2 level skills array for example.
 
-* **vitae dropdown: experience:** Part-done. List using Bootstrap cards.
+* **vitae dropdown: experience:** Bootstrap cards display experience data using data-binding from an array of experience based on an experience model. Work out how to separate cards.
 
-* **vitae dropdown: education:** tba. List using Bootstrap cards.
+* **vitae dropdown: education:** To DO: Bootstrap cards display education data using data-binding from an array of education based on an education model.
 
-* **vitae dropdown: other:** tba. List using Bootstrap cards.
+* **vitae dropdown: other:** tba. List using Bootstrap cards. Add link to rare diseases etc. music, house.
 
 * **Contact:** Single Boostrap card with links to email, github and linkedin. Add photo or background image.
 
-* **CV Download:** tba
+* **CV Download:** Finish 1-page CV that links to CV button on right.
 
 ## Screenshots
 
