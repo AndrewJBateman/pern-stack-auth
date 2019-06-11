@@ -21,7 +21,7 @@ Angular 8 app using Angular Bootstrap to create a portfolio website.
 
 ## Sections info
 
-* **Header:** Working nav-bar. Add logo on left.
+* **Header:** Working nav-bar. improve logo.
 
 * **Home:** Empty. Add something interesting: star project, photo.., newsfeed,
 
@@ -33,9 +33,9 @@ Angular 8 app using Angular Bootstrap to create a portfolio website.
 
 * **Skills:** Bootstrap card-deck with cards to display article data using data-binding from an array of skills based on a Skill model. Cards are sized so up to 4 will show on a row before wrapping to the next line. Work out how to add 2nd level so 1 group of cards under Programming and Engineering - 2 level skills array for example.
 
-* **vitae dropdown: experience:** Bootstrap cards display experience data using data-binding from an array of experience based on an experience model. Work out how to separate cards.
+* **vitae dropdown: experience:** Bootstrap cards display experience data using data-binding from an array of experience based on an experience model. Work out how to separate cards. Add data.
 
-* **vitae dropdown: education:** To DO: Bootstrap cards display education data using data-binding from an array of education based on an education model.
+* **vitae dropdown: education:** Bootstrap cards display education data using data-binding from an array of education based on an education model. Work out how to separate cards. Add data.
 
 * **vitae dropdown: other:** tba. List using Bootstrap cards. Add link to rare diseases etc. music, house.
 
@@ -86,7 +86,7 @@ export class Project {
 
 ## Features
 
-* [Angular Material Theming](https://material.angular.io/guide/theming),based on [Material Design spec](https://material.io/archive/guidelines/style/color.html#color-color-palette) colors are used for primary, accent, warning, foregraound and background palletes etc.
+* [Angular Material Theming](https://material.angular.io/guide/theming), based on [Material Design spec](https://material.io/archive/guidelines/style/color.html#color-color-palette) colors are used for primary, accent, warning, foreground and background palletes etc.
 
 ## Status & To-Do List
 
