@@ -1,11 +1,14 @@
 <mdb-navbar SideClass="navbar navbar-expand-lg navbar-light blue-grey lighten-5 fixed-top" [containerInside]="false">
 
   <!-- Navbar brand -->
-  <mdb-navbar-brand>
-    <a class="navbar-brand active" routerLinkActive="active-list-item" routerLink="/home">
-    <img src="assets/images/ab.png" height="50" alt=""></a>
+  <!-- <mdb-navbar-brand> -->
+    <a mdbBtn color="info" class="btn btn-narrow" size="sm" routerLinkActive="active-list-item" routerLink="/home">
+      <mdb-icon fas icon="home" size="2x"></mdb-icon>
+    </a>
+    <!-- <a class="navbar-brand active" routerLinkActive="active-list-item" routerLink="/home">
+    <img src="assets/images/logo.png" class="logo" alt=""></a> -->
     <span class="sr-only">(current)</span>
-  </mdb-navbar-brand>
+  <!-- </mdb-navbar-brand> -->
 
   <!-- Collapsible content -->
   <links>

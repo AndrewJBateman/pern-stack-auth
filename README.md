@@ -21,17 +21,17 @@ Angular 8 app using Angular Bootstrap to create a portfolio website.
 
 ## Sections info
 
-* **Header:** Working nav-bar. improve logo.
+* **Header:** Working nav-bar.
 
-* **Home:** Empty. Add something interesting: star project, photo.., newsfeed,
+* **Home:** template added. fix font-awesome icons. Add real content
 
-* **About:** 2 column layout with mat-cards for photos on left taking 3/12 width and a 9/12 width column for text. Add ionicons - see article?
+* **About:** 2 column layout with cards for photos on left taking 3/12 width and cards in 9/12 width column for text. Add real content.
 
-* **Projects:** Bootstrap card-deck with cards to display project data using data-binding from an array of projects based on a Project model. Cards are sized so up to 4 will show on a row before wrapping to the next line. Image sized to 16:9 ratio which for width 288px = height 162px. Content to be replaced.
+* **Projects:** Background image works. Bootstrap card-deck with cards to display project data using data-binding from an array of projects based on a Project model. Cards are sized so up to 4 will show on a row before wrapping to the next line. Image sized to 16:9 ratio which for width 288px = height 162px. Content to be replaced.
 
-* **Articles:** Bootstrap card-deck with cards to display article data using data-binding from an array of articles based on an Article model. Cards are sized so up to 4 will show on a row before wrapping to the next line. Image sized to 16:9 ratio which for width 288px = height 162px. Content to be replaced.
+* **Articles:** Background image works. Bootstrap card-deck with cards to display article data using data-binding from an array of articles based on an Article model. Cards are sized so up to 4 will show on a row before wrapping to the next line. Image sized to 16:9 ratio which for width 288px = height 162px. Content to be replaced.
 
-* **Skills:** Bootstrap card-deck with cards to display article data using data-binding from an array of skills based on a Skill model. Cards are sized so up to 4 will show on a row before wrapping to the next line. Work out how to add 2nd level so 1 group of cards under Programming and Engineering - 2 level skills array for example.
+* **Skills:** Background image does not fill screen. Bootstrap card-deck with cards to display article data using data-binding from an array of skills based on a Skill model. Cards are sized so up to 4 will show on a row before wrapping to the next line. Work out how to add 2nd level so 1 group of cards under Programming and Engineering - 2 level skills array for example.
 
 * **vitae dropdown: experience:** Bootstrap cards display experience data using data-binding from an array of experience based on an experience model. Work out how to separate cards. Add data.
 

@@ -24,3 +24,16 @@
     margin: 10px 20px 0 20px;
   }
 }
+
+.bg {
+  /* The image used */
+  background-image: url("/assets/images/iot.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

@@ -23,3 +23,20 @@ p {
 @media (max-width: 400px) {
 	.container { padding-top: 60px; }
 }
+
+body {
+  height: 100%;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("/assets/images/iot.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

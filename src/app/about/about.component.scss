@@ -7,8 +7,38 @@
 mdb-card-img {
   border: 10px solid #ffffff;
 }
-.container { padding-top: 90px; }
+
+mdb-card {
+  margin-bottom: 20px;
+}
+
+.about-title {
+  color: $accent;
+}
+
+.container-fluid {
+  padding-top: 90px;
+}
 
 @media (max-width: 400px) {
-	.container { padding-top: 70px; }
+	.container-fluid { 
+    padding-top: 80px; 
+  }
+}
+
+body, html {
+  height: 100%;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("/assets/images/iot.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

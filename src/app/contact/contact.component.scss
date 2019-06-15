@@ -35,11 +35,29 @@ mdb-icon, p{
   color: #61caff;
 }
 
-.bold-font {
+.bold-font-fluid {
   font-weight: 700;
 }
 
 .wider-letter-space {
   letter-spacing: 2px;
 }
-.container { padding-top: 150px; }
+.container-fluid { 
+  padding-top: 150px; 
+}
+
+body,html {
+  height: 100%;
+}
+.bg {
+  /* The image used */
+  background-image: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img(20).jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

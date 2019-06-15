@@ -1,52 +1,55 @@
-<div class="container">
-
-<div class="row flex-center">
-  <mdb-card id="contact-card">
-    <a
-      (mouseenter)="lineHover.onEmail = true;"
-      (mouseleave)="lineHover.onEmail = false;"
-      class="flex-align-center"
-      href="mailto:gomezbateman@yahoo.com">
-      <mdb-icon
-        far icon="envelope" size="2x"
-        [ngClass]="{'color-hover': lineHover.onEmail}"
-      ></mdb-icon>
-      <p
-        class="wider-letter-space"
-        [ngClass]="{'color-hover bold-font': lineHover.onEmail}">
-        gomezbateman@yahoo.com
-      </p>
-    </a>
-    <a
-      (mouseenter)="lineHover.onGithub = true;"
-      (mouseleave)="lineHover.onGithub = false;"
-      class="flex-align-center"
-      href="https://github.com/AndrewJBateman"
-      target="_blank">
-      <mdb-icon
-        fab icon="github" size="2x"
-        [ngClass]="{'color-hover': lineHover.onGithub}"
-      ></mdb-icon>
-      <p
-        [ngClass]="{'color-hover bold-font': lineHover.onGithub}">
-        Check out my Github repositories.
-      </p>
-    </a>
-    <a
-      (mouseenter)="lineHover.onLinkedIn = true;"
-      (mouseleave)="lineHover.onLinkedIn = false;"
-      class="flex-align-center"
-      href="https://www.linkedin.com/in/andrew-bateman/"
-      target="_blank">
-      <mdb-icon
-        fab icon="linkedin" size="2x"
-        [ngClass]="{'color-hover': lineHover.onLinkedIn}">
-      </mdb-icon>
-      <p
-        [ngClass]="{'color-hover bold-font': lineHover.onLinkedIn}">
-        Connect with me on LinkedIn.
-      </p>
-    </a>
-  </mdb-card>
+<body>
+<div class="bg">
+<div class="container-fluid">
+	<div class="row flex-center">
+		<mdb-card id="contact-card">
+			<a
+				(mouseenter)="lineHover.onEmail = true;"
+				(mouseleave)="lineHover.onEmail = false;"
+				class="flex-align-center"
+				href="mailto:gomezbateman@yahoo.com">
+				<mdb-icon
+					far icon="envelope" size="2x"
+					[ngClass]="{'color-hover': lineHover.onEmail}"
+				></mdb-icon>
+				<p
+					class="wider-letter-space"
+					[ngClass]="{'color-hover bold-font': lineHover.onEmail}">
+					gomezbateman@yahoo.com
+				</p>
+			</a>
+			<a
+				(mouseenter)="lineHover.onGithub = true;"
+				(mouseleave)="lineHover.onGithub = false;"
+				class="flex-align-center"
+				href="https://github.com/AndrewJBateman"
+				target="_blank">
+				<mdb-icon
+					fab icon="github" size="2x"
+					[ngClass]="{'color-hover': lineHover.onGithub}"
+				></mdb-icon>
+				<p
+					[ngClass]="{'color-hover bold-font': lineHover.onGithub}">
+					Check out my Github repositories.
+				</p>
+			</a>
+			<a
+				(mouseenter)="lineHover.onLinkedIn = true;"
+				(mouseleave)="lineHover.onLinkedIn = false;"
+				class="flex-align-center"
+				href="https://www.linkedin.com/in/andrew-bateman/"
+				target="_blank">
+				<mdb-icon
+					fab icon="linkedin" size="2x"
+					[ngClass]="{'color-hover': lineHover.onLinkedIn}">
+				</mdb-icon>
+				<p
+					[ngClass]="{'color-hover bold-font': lineHover.onLinkedIn}">
+					Connect with me on LinkedIn.
+				</p>
+			</a>
+		</mdb-card>
+	</div><!--end of row flex-center-->
 </div>
 </div>
+</body>

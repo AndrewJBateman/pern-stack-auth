@@ -2,18 +2,43 @@
 
 .section-header {
   color: $accent;
+  margin: 0 20px 0 35px;
 }
 
+h2 {
+  color: $accent;
+}
 
-.container { padding-top: 85px; }
+.container-fluid {
+  padding-top: 30px;
+}
 
+.card-deck {
+  margin: 20px;
+  padding: 0 auto;
+}
 
 @media (max-width: 400px) {
-	.container { padding-top: 70px; }
+	.container-fluid {
+    padding-top: 70px;
+  }
 
-/*   fa-flag {
-    padding: 10px;
-  } */
-
+  .section-header {
+    color: $accent;
+    margin: 10px 20px 0 20px;
+  }
 }
 
+.bg {
+  /* The image used */
+  background-image: url("/assets/images/bg-lightblue.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
