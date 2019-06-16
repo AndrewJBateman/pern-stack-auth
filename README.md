@@ -23,7 +23,7 @@ Angular 8 app using Angular Bootstrap to create a portfolio website.
 
 * **Header:** Working nav-bar.
 
-* **Home:** template added. fix font-awesome icons. Add real content
+* **Home:** template added. Background colour, menu and button colors based on Dropbox website. Using only mdb-icons icons. Remove fontawesome as bloat? Add real content
 
 * **About:** 2 column layout with cards for photos on left taking 3/12 width and cards in 9/12 width column for text. Add real content.
 
@@ -39,7 +39,7 @@ Angular 8 app using Angular Bootstrap to create a portfolio website.
 
 * **vitae dropdown: other:** tba. List using Bootstrap cards. Add link to rare diseases etc. music, house.
 
-* **Contact:** Single Boostrap card with links to email, github and linkedin. Add photo or background image.
+* **Contact:** Single Boostrap card with links to email, github and linkedin. Background image not covering page.
 
 * **CV Download:** Finish 1-page CV that links to CV button on right.
 

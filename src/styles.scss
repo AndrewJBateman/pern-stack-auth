@@ -60,17 +60,17 @@ p {
 /* everywhere else */
 * {
   font-family: Arial, Helvetica, sans-serif;
-  box-sizing: border-box; // used for footer
+  // box-sizing: border-box; // used for footer
 }
 
-*:before,
+/* *:before,
 *:after {
- box-sizing: border-box; // used for footer
-}
+//  box-sizing: border-box; // used for footer
+} */
 
 html, body {
  height: 100%;
- position: relative;
+//  position: relative;
 }
 
 
@@ -87,10 +87,10 @@ mat-icon{ // workaround for mat icon bug (probably induced by mdb)
   font-family: 'Material Icons' !important;
 }
 
-.main-container {
+/* .main-container {
     width: 60%;
     margin: 0 auto;
-}
+} */
 
 .slide-content-box {
   //background-color: transparentize(black, 0.40);

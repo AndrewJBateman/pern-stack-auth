@@ -1,8 +1,8 @@
-<mdb-navbar SideClass="navbar navbar-expand-lg navbar-light blue-grey lighten-5 fixed-top" [containerInside]="false">
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-light white fixed-top" [containerInside]="false">
 
   <!-- Navbar brand -->
   <!-- <mdb-navbar-brand> -->
-    <a mdbBtn color="info" class="btn btn-narrow" size="sm" routerLinkActive="active-list-item" routerLink="/home">
+    <a mdbBtn class="btn btn-narrow" size="sm" routerLinkActive="active-list-item" routerLink="/home">
       <mdb-icon fas icon="home" size="2x"></mdb-icon>
     </a>
     <!-- <a class="navbar-brand active" routerLinkActive="active-list-item" routerLink="/home">
@@ -32,7 +32,7 @@
       <li class="nav-item dropdown" dropdown>
         <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
           Vitae<span class="caret"></span></a>
-        <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary navbar-light blue-grey lighten-5" role="menu">
+        <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary navbar-light white" role="menu">
           <a routerLink="/experience" class="dropdown-item waves-light" mdbWavesEffect href="#">Experience</a>
           <a routerLink="/education" class="dropdown-item waves-light" mdbWavesEffect href="#">Education</a>
           <a routerLink="/other" class="dropdown-item waves-light" mdbWavesEffect href="#">Other</a>
@@ -49,31 +49,31 @@
     <ul class="navbar-nav ml-auto nav-flex-icons">
 
       <li class="nav-item">
-        <a mdbBtn color="info" class="btn-narrow" size="sm" href="https://www.linkedin.com/in/andrew-bateman/" target="_blank" rel="noreferrer">
+        <a mdbBtn  class="btn-narrow" size="sm" href="https://www.linkedin.com/in/andrew-bateman/" target="_blank" rel="noreferrer">
           <mdb-icon class="center" fab icon="linkedin" size="2x"></mdb-icon>
         </a>
       </li>
       <li class="nav-item">
-        <a mdbBtn color="info" class="btn btn-narrow" size="sm" href="https://github.com/AndrewJBateman" target="_blank" rel="noreferrer">
+        <a mdbBtn class="btn btn-narrow" size="sm" href="https://github.com/AndrewJBateman" target="_blank" rel="noreferrer">
           <mdb-icon fab icon="github" size="2x"></mdb-icon>
         </a>
       </li>
       <li class="nav-item" >
-        <a mdbBtn color="info" class="btn-narrow cv" size="sm" href="/assets/AndrewBatemanResume.pdf" target="_blank" rel="noreferrer">
+        <a mdbBtn class="btn-narrow cv" size="sm" href="/assets/AndrewBatemanResume.pdf" target="_blank" rel="noreferrer">
           <mdb-icon fas icon="file-download" size="2x"></mdb-icon> CV
         </a>
       </li>
       <li class="nav-item">
-        <a mdbBtn color="info" class="btn-narrow" size="sm" href="mailto:gomezbateman@yahoo.com" target="_blank" rel="noreferrer">
+        <a mdbBtn class="btn-narrow" size="sm" href="mailto:gomezbateman@yahoo.com" target="_blank" rel="noreferrer">
           <mdb-icon far icon="envelope" size="2x"></mdb-icon>
         </a>
       </li>
 
       <li class="nav-item">
-        <a mdbBtn class="btn-narrow" color="info" size="sm">
+        <a mdbBtn class="btn-narrow" style="color: #0071E0;" size="sm">
           <div class="btn-group" mdbDropdown>
             <mdb-icon fas icon="globe" size="2x" mdbDropdownToggle></mdb-icon>
-            <div class="dropdown-menu dropdown-menu-right dropdown-default navbar-light blue-grey lighten-5 language">
+            <div class="dropdown-menu dropdown-menu-right dropdown-default navbar-light lighten-5 language">
               <a class="dropdown-item" href="#" (click)="setLang('en')">
                 <mdb-icon far icon="flag" class="flag"></mdb-icon> EN
               </a>
