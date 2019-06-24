@@ -23,7 +23,7 @@ Angular 8 app using Angular Bootstrap to create a portfolio website.
 
 * **Header:** Working nav-bar.
 
-* **Home:** template added. Background colour, menu and button colors based on Dropbox website. Using only mdb-icons icons. Remove fontawesome as bloat? Add real content
+* **Home:** template added. Background colour, menu and button colors based on Dropbox website. Using only mdb-icons icons. Remove fontawesome as bloat? Add real content. Add Github info from API.
 
 * **About:** 2 column layout with cards for photos on left taking 3/12 width and cards in 9/12 width column for text. Add real content.
 

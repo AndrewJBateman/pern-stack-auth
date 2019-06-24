@@ -15,8 +15,17 @@
  padding-bottom: 100px; /* height of your footer */
 }
 
-app-footer {
- position: absolute;
- bottom: 0;
- width: 100%;
+.bg {
+  /* The image used */
+  // background-image: url("/assets/images/bg-lightblue.jpg");
+  background-color: #e6e6ec;
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
