@@ -17,15 +17,15 @@ Angular 8 app using Angular Bootstrap to create a portfolio website.
 
 ## General info
 
-* Responsive - media sizes for PC and phone-sized screens (max width 400px).
+* Responsive - media sizes for PC and phone-sized screens (max width 400px). Add common wallpaper to styles.css?
 
 ## Sections info
 
 * **Header:** Working nav-bar.
 
-* **Home:** template added. Background colour, menu and button colors based on Dropbox website. Using only mdb-icons icons. Remove fontawesome as bloat? Add real content. Add Github info from API.
+* **Home:** template added. Background colour, menu and button colors based on Dropbox website. Using only mdb-icons icons - replace with relevent icons. Remove fontawesome as bloat? Started to add real content. Github API card added to display my repo details only, linked to github service. Add button for more info?
 
-* **About:** 2 column layout with cards for photos on left taking 3/12 width and cards in 9/12 width column for text. Add real content.
+* **About:** 2 column layout with cards for photos on left taking 3/12 width and cards in 9/12 width column for text. Complete real content.
 
 * **Projects:** Background image works. Bootstrap card-deck with cards to display project data using data-binding from an array of projects based on a Project model. Cards are sized so up to 4 will show on a row before wrapping to the next line. Image sized to 16:9 ratio which for width 288px = height 162px. Content to be replaced.
 
@@ -87,6 +87,8 @@ export class Project {
 ## Features
 
 * [Angular Material Theming](https://material.angular.io/guide/theming), based on [Material Design spec](https://material.io/archive/guidelines/style/color.html#color-color-palette) colors are used for primary, accent, warning, foreground and background palletes etc.
+
+* [Github API](https://developer.github.com/v4/query/) used with httpClient get request to display current state of my repository.
 
 ## Status & To-Do List
 

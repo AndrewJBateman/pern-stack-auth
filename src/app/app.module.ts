@@ -17,6 +17,7 @@ import { ExperienceComponent } from './experience/experience.component';
 import { EducationComponent } from './education/education.component';
 import { OtherComponent } from './other/other.component';
 import { ArticlesComponent } from './articles/articles.component';
+import { GithubService } from './services/github.service';
 
 @NgModule({
 	declarations: [
@@ -40,7 +41,7 @@ import { ArticlesComponent } from './articles/articles.component';
 		MaterialImports,
 		MDBBootstrapModule.forRoot(),
 	],
-	providers: [],
+	providers: [GithubService],
 	bootstrap: [AppComponent]
 })
 export class AppModule { }
