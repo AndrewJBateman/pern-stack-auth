@@ -23,7 +23,7 @@ Angular 8 app using Angular Bootstrap to create a portfolio website.
 
 * **Header:** Working nav-bar.
 
-* **Home:** template added. Background colour, menu and button colors based on Dropbox website. Using only mdb-icons icons - replace with relevent icons. Remove fontawesome as bloat? Started to add real content. Github API card added to display my repo details only, linked to github service. Add button for more info?
+* **Home:** template added. Background colour, menu and button colors based on Dropbox website. Using only mdb-icons icons - replace with relevent icons. Remove fontawesome as bloat? Started to add real content. Http service added to display my number of repos, linked to github API. Option: Add more detailed github later but will need api key.
 
 * **About:** 2 column layout with cards for photos on left taking 3/12 width and cards in 9/12 width column for text. Complete real content.
 
@@ -92,7 +92,7 @@ export class Project {
 
 ## Status & To-Do List
 
-* Status: In development. Compiles. All components created and routing works to all pages. HEader, Footer, Projects pages initial info added.
+* Status: In development. Compiles. All components created and routing works to all pages. Header, Footer, Projects pages initial info added.
 
 * To-Do: see Sections Info above.
 

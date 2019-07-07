@@ -1,16 +1,18 @@
 @import "../../styles.scss";
 
+
 .section-header {
   color: $accent;
   margin: 0 20px 0 35px;
 }
 
-h2 {
-  color: #47525d;
+h5, .github-title {
+  color: $accent;
 }
 
 p {
   color: #47525d;
+  margin: 0 0 1rem 0;
 }
 
 .container-fluid {

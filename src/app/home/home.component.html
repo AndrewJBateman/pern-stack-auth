@@ -3,14 +3,14 @@
 <section class="home-content my-5">
 
   <!-- Section heading -->
-  <h2 class="h1-responsive font-weight-bold text-center my-lg-3">Andrew Bateman</h2>
+<h2 class="section-header py-3 font-weight-bold text-center">Andrew Bateman</h2>
   <!-- Section description -->
-  <p class="lead text-center w-responsive mx-auto mb-3">Programmer and Engineer</p>
+  <!-- <p class="lead text-center w-responsive mx-auto mb-3">Programmer and Engineer</p> -->
 
   <!-- Grid row -->
   <div class="row">
 
-    <!-- Grid column -->
+    <!-- Grid column 1 -->
     <div class="col-md-4">
 
       <!-- Grid row -->
@@ -63,7 +63,7 @@
 
         <!-- Grid column -->
         <div class="col-10">
-          <h5 class="font-weight-bold mb-1">Technical/Scientific Programmer</h5>
+          <h5 class="font-weight-bold mb-1">Technical Programmer</h5>
           <p class="mb-md-0">A range of Ionic apps created.</p>
         </div>
         <!-- Grid column -->
@@ -72,42 +72,27 @@
       <!-- Grid row -->
 
     </div>
-    <!-- Grid column -->
+    <!-- End Grid column 1 -->
 
-    <!-- Grid column -->
-    <!-- original image in center -->
-<!--     <div class="col-md-4 text-center">
-      <img class="img-fluid" src="https://mdbootstrap.com/img/Mockups/Transparent/Small/iphone-portfolio1.png"
-        alt="Sample image">
-    </div> -->
-    <!-- new image in center -->
-<div class="col-md-4 text-center">
-<mdb-card class="testimonial-card">
-      <!--Bacground color-->
-      <div class="card-up indigo lighten-1">
+    <!-- Grid column 2 -->
+    <div class="col-md-4 text-center">
+      <div class="avatar mx-auto mt-3">
+        <img 
+          src="{{ profile.avatar_url }}" 
+          class="rounded-circle z-depth-1" 
+          style="width:60%"
+          alt="github avatar"
+        >
       </div>
+      <h5 class="github-title font-weight-bold mt-4 mb-1">
+        {{ profile.bio }}
+      </h5>
+      <p class="mb-3">Github Repositories: {{ profile.public_repos }}
+      </p>
+    </div>
+    <!-- End Grid column 2 -->
 
-      <!--Avatar-->
-      <div class="avatar mx-auto">
-        <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20%2810%29.jpg" class="rounded-circle">
-      </div>
-
-      <mdb-card-body>
-        <!--Name-->
-        <mdb-card-title>
-          <h4>{{ data?.name }}</h4>
-        </mdb-card-title>
-        <hr>
-        <!--Quotation-->
-        <p>
-          <i class="fas fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos,
-          adipisci</p>
-      </mdb-card-body>
-    </mdb-card>
-</div>
-    <!-- Grid column -->
-
-    <!-- Grid column -->
+    <!-- Grid column 3 -->
     <div class="col-md-4">
 
       <!-- Grid row -->
@@ -161,8 +146,8 @@
 
         <!-- Grid column -->
         <div class="col-10">
-          <h5 class="font-weight-bold mb-3">Instrumentation/Control Engineer</h5>
-          <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit
+          <h5 class="font-weight-bold mb-1">Instrumentation/Control Engineer</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit
             maiores nam, aperiam minima assumenda deleniti hic.</p>
         </div>
         <!-- Grid column -->
