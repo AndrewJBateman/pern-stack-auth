@@ -27,7 +27,7 @@ Angular 8 app using Angular Bootstrap to create a portfolio website.
 
 * **About:** 2 column layout with cards for photos on left taking 3/12 width and cards in 9/12 width column for text. Complete real content.
 
-* **Projects:** Background image works. Bootstrap card-deck with cards to display project data using data-binding from an array of projects based on a Project model. Cards are sized so up to 4 will show on a row before wrapping to the next line. Image sized to 16:9 ratio which for width 288px = height 162px. Content to be replaced.
+* **Projects:** Background image works. Bootstrap card-deck with cards to display project data using data-binding from an array of projects based on a Project model. Cards are sized so up to 4 will show on a row before wrapping to the next line. Image sized to 16:9 ratio which for width 288px = height 162px. Cards simplified to get 8 on a large screen. Content to be replaced.
 
 * **Articles:** Background image works. Bootstrap card-deck with cards to display article data using data-binding from an array of articles based on an Article model. Cards are sized so up to 4 will show on a row before wrapping to the next line. Image sized to 16:9 ratio which for width 288px = height 162px. Content to be replaced.
 

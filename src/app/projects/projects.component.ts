@@ -11,9 +11,9 @@ export class ProjectsComponent {
 
 	constructor() { }
 
-	openLink(uri: string) {
-		if (uri != null) {
-			window.open(uri, '_blank');
-		}
-	}
+	// openLink(uri: string) {
+	// 	if (uri != null) {
+	// 		window.open(uri, '_blank');
+	// 	}
+	// }
 }

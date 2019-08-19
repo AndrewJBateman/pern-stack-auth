@@ -6,12 +6,24 @@
 }
 
 .container-fluid {
-  padding-top: 90px;
+  padding-top: 80px;
 }
 
 .card-deck {
   margin: 20px;
   padding: 0 auto;
+}
+
+.card-text content {
+  margin: 0;
+}
+
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+
+.card-text:last-child {
+  margin-bottom: 0;
 }
 
 @media (max-width: 400px) {
@@ -23,6 +35,18 @@
     color: $accent;
     margin: 10px 20px 0 20px;
   }
+
+.card-text content {
+    margin: 0;
+  }
+
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+
+.card-text:last-child {
+  margin-bottom: 0 !important;
+}
 }
 
 .bg {

@@ -2,34 +2,24 @@ import { Project } from './project.module';
 
 export const PROJECTS: Project[] = [
 	{
+		title: 'World News',
+		img: {
+			src: '../assets/images/techNews.jpg',
+			alt: 'country data'
+		},
+		content: `Ionic-Angular app that displays world news using
+      JSON data fetched from an external API. Includes a user search field`,
+		github: 'https://github.com/AndrewJBateman/angular-api-countries',
+		url: 'https://www.getronics.com/what-we-do/industries/healthcare/'
+	},
+	{
 		title: 'Country Data',
 		img: {
 			src: '../assets/images/countryData.jpg',
 			alt: 'country data'
 		},
-		content: `Ionic app that displays information about world countries using
+		content: `Ionic-Angular app that displays information about world countries using
       JSON data fetched from an external API. Includes a user search field`,
-		tools: [
-			{ prefix: 'fab', icon: 'angular' },
-			{ prefix: 'fab', icon: 'html5' },
-			{ prefix: 'fab', icon: 'css3-alt' },
-		],
-		github: 'https://github.com/AndrewJBateman/angular-api-countries',
-		url: 'https://www.getronics.com/what-we-do/industries/healthcare/'
-	},
-	{
-		title: 'Technical News',
-		img: {
-			src: '../assets/images/techNews.jpg',
-			alt: 'country data'
-		},
-		content: `Ionic app that displays technical data using
-      JSON data fetched from an external API. Includes a user search field`,
-		tools: [
-			{ prefix: 'fab', icon: 'angular' },
-			{ prefix: 'fab', icon: 'html5' },
-			{ prefix: 'fab', icon: 'css3-alt' },
-		],
 		github: 'https://github.com/AndrewJBateman/angular-api-countries',
 		url: 'https://www.getronics.com/what-we-do/industries/healthcare/'
 	},
@@ -41,11 +31,6 @@ export const PROJECTS: Project[] = [
 		},
 		content: `Ionic app that displays electrical information using
       JSON data fetched from an external API. Includes a user search field`,
-		tools: [
-			{ prefix: 'fab', icon: 'angular' },
-			{ prefix: 'fab', icon: 'html5' },
-			{ prefix: 'fab', icon: 'css3-alt' },
-		],
 		github: 'https://github.com/AndrewJBateman/angular-api-countries',
 		url: 'https://www.getronics.com/what-we-do/industries/healthcare/'
 	},
@@ -57,11 +42,6 @@ export const PROJECTS: Project[] = [
 		},
 		content: `Ionic app that displays information about cryptocurrency prices using
       JSON data fetched from an external API. Includes a user search field`,
-		tools: [
-			{ prefix: 'fab', icon: 'angular' },
-			{ prefix: 'fab', icon: 'html5' },
-			{ prefix: 'fab', icon: 'css3-alt' },
-		],
 		github: 'https://github.com/AndrewJBateman/angular-api-countries',
 		url: 'https://www.getronics.com/what-we-do/industries/healthcare/'
 	},
@@ -72,11 +52,6 @@ export const PROJECTS: Project[] = [
 			alt: 'tensorflow data'
 		},
 		content: `Ionic app that displays tensorflow info.`,
-		tools: [
-			{ prefix: 'fab', icon: 'angular' },
-			{ prefix: 'fab', icon: 'html5' },
-			{ prefix: 'fab', icon: 'css3-alt' },
-		],
 		github: 'https://github.com/AndrewJBateman/angular-api-countries',
 		url: 'https://www.getronics.com/what-we-do/industries/healthcare/'
 	},
@@ -87,11 +62,6 @@ export const PROJECTS: Project[] = [
 			alt: 'world bank data'
 		},
 		content: `Ionic app that displays worldbankinfo.`,
-		tools: [
-			{ prefix: 'fab', icon: 'angular' },
-			{ prefix: 'fab', icon: 'html5' },
-			{ prefix: 'fab', icon: 'css3-alt' },
-		],
 		github: 'https://github.com/AndrewJBateman/angular-api-countries',
 		url: 'https://www.getronics.com/what-we-do/industries/healthcare/'
 	},
@@ -102,11 +72,16 @@ export const PROJECTS: Project[] = [
 			alt: 'nasa data'
 		},
 		content: `Ionic app that displays NASA info.`,
-		tools: [
-			{ prefix: 'fab', icon: 'angular' },
-			{ prefix: 'fab', icon: 'html5' },
-			{ prefix: 'fab', icon: 'css3-alt' },
-		],
+		github: 'https://github.com/AndrewJBateman/angular-api-countries',
+		url: 'https://www.getronics.com/what-we-do/industries/healthcare/'
+	},
+	{
+		title: 'Youtube Pouch',
+		img: {
+			src: '../assets/images/techNews.jpg',
+			alt: 'youtube data'
+		},
+		content: `Ionic app that stores Youtube videos in a very colourful format for people with special-needs`,
 		github: 'https://github.com/AndrewJBateman/angular-api-countries',
 		url: 'https://www.getronics.com/what-we-do/industries/healthcare/'
 	}
