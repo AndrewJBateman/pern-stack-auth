@@ -1,6 +1,6 @@
 # Portfolio Angular
 
-Angular 8 app using Angular Bootstrap to create a portfolio website with Angular Material Design Bootstrap.
+Angular 8 app using Angular Bootstrap to create a portfolio website with Angular Material Design Bootstrap. Due to conflicts between MD Angular Bootstrap and Angular 8 I will create a new Angular Portfolio website that will use Angular Material instead. It will also have simpler styling. I will return to this repo once MD Angular BS is fully compatible with Angular 8.
 
 *** Note: to open web links in a new window use: _ctrl+click on link_**
 

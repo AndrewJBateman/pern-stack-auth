@@ -1,12 +1,4 @@
 
-/* .body-background-image {
-  background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.9)), url('../assets/background-img.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-} */
-
 .body-container {
  min-height: 100vh; /* will cover the 100% of viewport */
  overflow: hidden;
@@ -16,9 +8,6 @@
 }
 
 .bg {
-  /* The image used */
-  // background-image: url("/assets/images/bg-lightblue.jpg");
-  background-color: #e6e6ec;
 
   /* Full height */
   height: 100%;

@@ -2,12 +2,12 @@
 
 
 .section-header {
-  color: $accent;
+  color: blue;
   margin: 0 20px 0 35px;
 }
 
 h5, .github-title {
-  color: $accent;
+  color: blue;
 }
 
 p {
@@ -30,22 +30,18 @@ p {
   }
 
   .section-header {
-    color: $accent;
+    color: blue;
     margin: 10px 20px 0 20px;
   }
 }
 
 .bg {
-  /* The image used */
-  // background-image: url("/assets/images/bg-lightblue.jpg");
-  background-color: #e6e6ec;
-
   /* Full height */
   height: 100%;
 
   /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+  // background-position: center;
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // background-position: center center;
 }

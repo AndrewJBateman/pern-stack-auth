@@ -1,26 +1,26 @@
-@import '~@angular/material/theming';
+// @import '~@angular/material/theming';
 
-@include mat-core();
+// @include mat-core();
 
 /* custom palette for pure white */
-$mat-white: (
-  50: #ffffff,
-  contrast: (
-    50: $black-87-opacity,
-  )
-);
+// $mat-white: (
+//   50: #ffffff,
+//   contrast: (
+//     50: $black-87-opacity,
+//   )
+// );
 
-$corporate-app-primary: mat-palette($mat-white, 50);
-$corporate-app-accent:  mat-palette($mat-blue, 800, 100, 900);
-$corporate-app-text:  mat-palette($mat-blue, 900);
-$corporate-app-warn: mat-palette($mat-red);
-$corporate-app-theme: mat-light-theme($corporate-app-primary, $corporate-app-accent, $corporate-app-warn);
+// $corporate-app-primary: mat-palette($mat-white, 50);
+// $corporate-app-accent:  mat-palette($mat-blue, 800, 100, 900);
+// $corporate-app-text:  mat-palette($mat-blue, 900);
+// $corporate-app-warn: mat-palette($mat-red);
+// $corporate-app-theme: mat-light-theme($corporate-app-primary, $corporate-app-accent, $corporate-app-warn);
 
-$primary: mat-color($corporate-app-primary);
-$accent: mat-color($corporate-app-accent);
-$warn: mat-color($corporate-app-warn);
+// $primary: mat-color($corporate-app-primary);
+// $accent: mat-color($corporate-app-accent);
+// $warn: mat-color($corporate-app-warn);
 
-@include angular-material-theme($corporate-app-theme);
+// @include angular-material-theme($corporate-app-theme);
 
 /* Application-wide Styles */
 h1 {
