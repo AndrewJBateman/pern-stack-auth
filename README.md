@@ -1,10 +1,10 @@
-# Portfolio Angular
+# :zap: PERN Full Stack Todo
 
-Angular 8 app using Angular Bootstrap to create a portfolio website with Angular Material Design Bootstrap. Due to conflicts between MD Angular Bootstrap and Angular 8 I will create a new Angular Portfolio website that will use Angular Material instead. It will also have simpler styling. I will return to this repo once MD Angular BS is fully compatible with Angular 8.
+* PostgreSQL Express React Node (PERN) full-stack app, integrates React frontend with Node.js backend. Tutorial code (see 'Inspiration' below)
 
 *** Note: to open web links in a new window use: _ctrl+click on link_**
 
-## Table of contents
+## :page_facing_up: Table of contents
 
 * [General info](#general-info)
 * [Screenshots](#screenshots)
@@ -15,95 +15,124 @@ Angular 8 app using Angular Bootstrap to create a portfolio website with Angular
 * [Inspiration](#inspiration)
 * [Contact](#contact)
 
-## General info
+## :books: General info
 
-* Responsive - media sizes for PC and phone-sized screens (max width 400px). Add common wallpaper to styles.css?
+### Backend
 
-## Sections info
+* PostgreSQL needs to be installed and running - I started it from my Windows 10 PostgreSQL 12 dropdown option 'SQL shell (psql)'
+* Postman used to test the backend before frontend was available
 
-* **Header:** Working nav-bar.
+### Frontend
 
-* **Home:** template added. Background colour, menu and button colors based on Dropbox website. Using only mdb-icons icons - replace with relevent icons. Remove fontawesome as bloat? Started to add real content. Http service added to display my number of repos, linked to github API. Option: Add more detailed github later but will need api key.
+* React frontend includes a simple todo list with a user input field and a table of todos below. User can edit and delete todos.
+* [JavaScript XML (JSX)](https://reactjs.org/docs/introducing-jsx.html) used to write HTML elements in Javascript
+* [React Fragments](https://reactjs.org/docs/fragments.html) used to show table of todos as a row with columns in the DDM
 
-* **About:** 2 column layout with cards for photos on left taking 3/12 width and cards in 9/12 width column for text. Complete real content.
+## :camera: Screenshots
 
-* **Projects:** Background image works. Bootstrap card-deck with cards to display project data using data-binding from an array of projects based on a Project model. Cards are sized so up to 4 will show on a row before wrapping to the next line. Image sized to 16:9 ratio which for width 288px = height 162px. Cards simplified to get 8 on a large screen. Content to be replaced.
+![Backend screenshot](./img/postgresql.png)
+![Frontend & backend screenshot](./img/todos.png)
+![Frontend screenshot](./img/edit.png)
 
-* **Articles:** Background image works. Bootstrap card-deck with cards to display article data using data-binding from an array of articles based on an Article model. Cards are sized so up to 4 will show on a row before wrapping to the next line. Image sized to 16:9 ratio which for width 288px = height 162px. Content to be replaced.
+## :signal_strength: Technologies - Backend
 
-* **Skills:** Background image does not fill screen. Bootstrap card-deck with cards to display article data using data-binding from an array of skills based on a Skill model. Cards are sized so up to 4 will show on a row before wrapping to the next line. Work out how to add 2nd level so 1 group of cards under Programming and Engineering - 2 level skills array for example.
+* [PostgreSQL v12.2](https://www.postgresql.org/)
+* [PostgreSQL Installer for Windows](https://www.postgresqltutorial.com/install-postgresql/)
+* [Express.js middleware v4.17.1](https://expressjs.com/)
+* [Node.js v12.4.0](https://nodejs.org/es/)
+* [Nodemon](https://www.npmjs.com/package/nodemon) npm module so backend server will automatically restart after code changes
+* [Postman API](https://www.postman.com/downloads/) to simulate a frontend
 
-* **vitae dropdown: experience:** Bootstrap cards display experience data using data-binding from an array of experience based on an experience model. Work out how to separate cards. Add data.
+## :signal_strength: Technologies - Frontend
 
-* **vitae dropdown: education:** Bootstrap cards display education data using data-binding from an array of education based on an education model. Work out how to separate cards. Add data.
+* [React framework v16.13.1](https://reactjs.org/)
+* [Bootstrap v4.4.1](https://getbootstrap.com/) component library
 
-* **vitae dropdown: other:** tba. List using Bootstrap cards. Add link to rare diseases etc. music, house.
+## :floppy_disk: Setup - Backend
 
-* **Contact:** Single Boostrap card with links to email, github and linkedin. Background image not covering page.
+* Change to `/server` directory
+* Install dependencies using `npm i`
+* Install [nodemon v2.0.2](https://www.npmjs.com/package/nodemon) globally if you don't already have it
+* Install [PostgreSQL](https://www.postgresql.org/) & run it (requires the password you created during installation)
+* Add database access credentials to `db.js` - recommend installing [npm dotenv](https://www.npmjs.com/package/dotenv) & using .env to hide credentials if commiting to Github
+* Postgresql shell commands: `\l` list all databases. `\c` database1 connect to database1. `\dt` inspect tables. `\d+` inspect table & show relation information. `\q` to quit.
+* Run `nodemon server` for a dev server
+* `http://localhost:5000/` can be accessed for CRUD operations such as POST, GET, PUT, DELETE etc. using Postman
 
-* **CV Download:** Finish 1-page CV that links to CV button on right.
+## :floppy_disk: Setup - Frontend
 
-## Screenshots
+* Change to `/client` directory
+* Install dependencies using `npm i`. (I have not tried this method and cannot be sure it will work)
+* Alternatively - and better - create new React project using `npx create-react-app my-app`
+* run `npm start`. Frontend will open at `http://localhost:3000/`
 
-![Example screenshot](./img/Projects.png)
-![Example screenshot](./img/Contact.png)
+## :computer: Code Examples - Backend
 
-## Technologies
+* backend `index.js`: express post method used to add new todo [description] to postgreSQL database using SQL INSERT INTO statement
 
-* [Angular CLI v8.0.1](https://github.com/angular/angular-cli)
+```javascript
+// create a todo
+app.post('/todos', async (req, res) => {
+  try {
+    const { description } = req.body;
+    const newTodo = await pool.query(
+      "INSERT INTO todo (description) VALUES($1) RETURNING *",
+      [description]
+    );
 
-* [Angular framework v8.0.0](https://angular.io/)
-
-* [Angular Material v8.0.0](https://material.angular.io/)
-
-* [MDBootstrap Angular v7.5.3](https://mdbootstrap.com/) & [github repo: Angular-Bootstrap-with-Material-Design](https://github.com/mdbootstrap/Angular-Bootstrap-with-Material-Design)
-
-* [MDBootstrap icons](https://mdbootstrap.com/docs/jquery/content/icons-list/)
-
-## Setup
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Code Examples
-
-```typescript
-export class Project {
-  title: string;
-  img: { src: string, alt: string };
-  content: string;
-  tools: { prefix: string, icon: string } [];
-  github: string;
-  url: string;
-}
-
+    res.json(newTodo.rows[0]);
+  } catch (err) {
+    console.error(err.message);
+  }
+})
 ```
 
-## Features
+## :computer: Code Examples - Frontend
 
-* [Angular Material Theming](https://material.angular.io/guide/theming), based on [Material Design spec](https://material.io/archive/guidelines/style/color.html#color-color-palette) colors are used for primary, accent, warning, foreground and background palletes etc.
+* function that runs when user presses 'Add' button: the input body (description) is converted from a JavaScript object to a JSON string & POSTed to the todo database
 
-* [Github API](https://developer.github.com/v4/query/) used with httpClient get request to display current state of my repository.
+```javascript
+  const onSubmitForm = async e => {
+    e.preventDefault();
+    try {
+      const body = { description };
+      const response = await fetch("http://localhost:5000/todos", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(body)
+      });
 
-## Status & To-Do List
+      console.log("Successfully added todo: ", response);
+      window.location = "/";
+    } catch (err) {
+      console.error(err.message);
+    }
+  };
+```
 
-* Status: In development. Compiles. All components created and routing works to all pages. Header, Footer, Projects pages initial info added.
+## :cool: Features - Backend
 
-* To-Do: see Sections Info above.
+* All data stored in PostgreSQL database that can also be viewed and changed from the PostgreSQL shell (psql)
 
-## Inspiration
+## :cool: Features - Frontend
 
-* [website by Julian Rubiano](http://www.julienrubiano.fr/)
+* React app created from the command prompt using [Create React App](https://reactjs.org/docs/create-a-new-react-app.html)
+* Uses the [Bootstrap basic table](https://www.w3schools.com/bootstrap/bootstrap_tables.asp) to list todos
+* [Bootstrap 4 Modal](https://www.w3schools.com/bootstrap4/bootstrap_modal.asp) dialog box
 
-* [website by Jaxon Wright](https://jaxonwright.com/)
+## :clipboard: Status & To-Do List
 
-* [Medium article by Tomas Trajan: The complete guide to Angular Material Themes](https://medium.com/@tomastrajan/the-complete-guide-to-angular-material-themes-4d165a9d24d1)
+* Status: Working front and back ends.
+* To-Do: Add commenting. Add functionality.
 
-## Contact
+## :clap: :wrench: Inspiration/General Tools
 
-Created by [ABateman](https://www.andrewbateman.org) - feel free to contact me!
+* [PERN Stack Course - PostgreSQL, Express, React, and Node](https://www.youtube.com/watch?v=ldYcgPKEZC8&t=116s)
+* [Youtube video: Learn Database Design by combining our JWT and PERN stack Todo List app together, part 2](https://www.youtube.com/watch?v=25kouonvUbg)
+* [React documentation](https://reactjs.org/docs/getting-started.html)
+* [Enable Emmet support for JSX in Visual Studio Code | React](https://medium.com/@eshwaren/enable-emmet-support-for-jsx-in-visual-studio-code-react-f1f5dfe8809c)
+* [js-beautify for VS Code](https://marketplace.visualstudio.com/items?itemName=HookyQR.beautify)
+
+## :envelope: Contact
+
+* Repo created by [ABateman](https://www.andrewbateman.org) - you are welcome to [send me a message](https://andrewbateman.org/contact)
