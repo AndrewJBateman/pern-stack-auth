@@ -1,6 +1,6 @@
 # :zap: PERN Full Stack Todo
 
-* PostgreSQL Express React Node (PERN) full-stack app, integrates React frontend with Node.js backend. Tutorial code (see 'Inspiration' below)
+* PostgreSQL Express React Node (PERN) full-stack app, integrates React frontend with Node.js backend. Tutorial code from [The Stoic Programmers](https://www.youtube.com/channel/UCAPuqvFWmUg_gc_AZHUBPsA) (see 'Inspiration' below)
 
 *** Note: to open web links in a new window use: _ctrl+click on link_**
 
@@ -122,13 +122,15 @@ app.post('/todos', async (req, res) => {
 
 ## :clipboard: Status & To-Do List
 
-* Status: Working front and back ends.
-* To-Do: Add commenting. Add functionality.
+* Status: error in registration
+* To-Do: Fix errors and complete testing
 
 ## :clap: :wrench: Inspiration/General Tools
 
-* [PERN Stack Course - PostgreSQL, Express, React, and Node](https://www.youtube.com/watch?v=ldYcgPKEZC8&t=116s)
+* [PERN Stack Course - PostgreSQL, Express, React and Node](https://www.youtube.com/watch?v=ldYcgPKEZC8&t=116s)
+* [Youtube video: Learn Database Design by combining our JWT and PERN stack Todo List app together Part 1](https://www.youtube.com/watch?v=l3njf_tU8us)
 * [Youtube video: Learn Database Design by combining our JWT and PERN stack Todo List app together, part 2](https://www.youtube.com/watch?v=25kouonvUbg)
+* [Youtube video: How to Deploy a PERN application on Heroku](https://www.youtube.com/watch?v=ZJxUOOND5_A)
 * [React documentation](https://reactjs.org/docs/getting-started.html)
 * [Enable Emmet support for JSX in Visual Studio Code | React](https://medium.com/@eshwaren/enable-emmet-support-for-jsx-in-visual-studio-code-react-f1f5dfe8809c)
 * [js-beautify for VS Code](https://marketplace.visualstudio.com/items?itemName=HookyQR.beautify)
