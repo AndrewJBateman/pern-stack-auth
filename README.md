@@ -36,17 +36,17 @@
 
 ## :signal_strength: Technologies - Backend
 
-* [PostgreSQL v12.2](https://www.postgresql.org/)
+* [PostgreSQL v12](https://www.postgresql.org/)
 * [PostgreSQL Installer for Windows](https://www.postgresqltutorial.com/install-postgresql/)
-* [Express.js middleware v4.17.1](https://expressjs.com/)
-* [Node.js v12.4.0](https://nodejs.org/es/)
+* [Express.js middleware v4](https://expressjs.com/)
+* [Node.js v12](https://nodejs.org/es/)
 * [Nodemon](https://www.npmjs.com/package/nodemon) npm module so backend server will automatically restart after code changes
 * [Postman API](https://www.postman.com/downloads/) to simulate a frontend
 
 ## :signal_strength: Technologies - Frontend
 
-* [React framework v16.13.1](https://reactjs.org/)
-* [Bootstrap v4.4.1](https://getbootstrap.com/) component library
+* [React framework v16](https://reactjs.org/)
+* [Bootstrap v4](https://getbootstrap.com/) component library
 
 ## :floppy_disk: Setup - Backend
 
@@ -62,8 +62,7 @@
 ## :floppy_disk: Setup - Frontend
 
 * Change to `/client` directory
-* Install dependencies using `npm i`. (I have not tried this method and cannot be sure it will work)
-* Alternatively - and better - create new React project using `npx create-react-app my-app`
+* Install dependencies using `npm i`.
 * run `npm start`. Frontend will open at `http://localhost:3000/`
 
 ## :computer: Code Examples - Backend
