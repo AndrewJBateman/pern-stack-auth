@@ -1,8 +1,12 @@
 # :zap: PERN Full Stack Todo
 
 * PostgreSQL Express React Node (PERN) full-stack app, integrates React frontend with Node.js backend. Tutorial code from [The Stoic Programmers](https://www.youtube.com/channel/UCAPuqvFWmUg_gc_AZHUBPsA) (see 'Inspiration' below)
+* **Note:** to open web links in a new window use: _ctrl+click on link_
 
-*** Note: to open web links in a new window use: _ctrl+click on link_**
+![GitHub repo size](https://img.shields.io/github/repo-size/AndrewJBateman/pern-stack-auth?style=plastic)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/AndrewJBateman/pern-stack-auth?style=plastic)
+![GitHub Repo stars](https://img.shields.io/github/stars/AndrewJBateman/pern-stack-auth?style=plastic)
+![GitHub last commit](https://img.shields.io/github/last-commit/AndrewJBateman/pern-stack-auth?style=plastic)
 
 ## :page_facing_up: Table of contents
 
@@ -26,7 +30,7 @@
 
 * React frontend includes a simple todo list with a user input field and a table of todos below. User can edit and delete todos.
 * [JavaScript XML (JSX)](https://reactjs.org/docs/introducing-jsx.html) used to write HTML elements in Javascript
-* [React Fragments](https://reactjs.org/docs/fragments.html) used to show table of todos as a row with columns in the DDM
+* [React Fragments](https://reactjs.org/docs/fragments.html) used to show table of todos as a row with columns in the DOM
 
 ## :camera: Screenshots
 
@@ -39,7 +43,7 @@
 * [PostgreSQL v12](https://www.postgresql.org/)
 * [PostgreSQL Installer for Windows](https://www.postgresqltutorial.com/install-postgresql/)
 * [Express.js middleware v4](https://expressjs.com/)
-* [Node.js v12](https://nodejs.org/es/)
+* [Node.js v14](https://nodejs.org/es/)
 * [Nodemon](https://www.npmjs.com/package/nodemon) npm module so backend server will automatically restart after code changes
 * [Postman API](https://www.postman.com/downloads/) to simulate a frontend
 
@@ -52,7 +56,7 @@
 
 * Change to `/server` directory
 * Install dependencies using `npm i`
-* Install [nodemon v2.0.2](https://www.npmjs.com/package/nodemon) globally if you don't already have it
+* Install [nodemon](https://www.npmjs.com/package/nodemon) globally if you don't already have it
 * Install [PostgreSQL](https://www.postgresql.org/) & run it (requires the password you created during installation)
 * Add database access credentials to `db.js` - recommend installing [npm dotenv](https://www.npmjs.com/package/dotenv) & using .env to hide credentials if commiting to Github
 * Postgresql shell commands: `\l` list all databases. `\c` database1 connect to database1. `\dt` inspect tables. `\d+` inspect table & show relation information. `\q` to quit.
@@ -134,6 +138,10 @@ app.post('/todos', async (req, res) => {
 * [Enable Emmet support for JSX in Visual Studio Code | React](https://medium.com/@eshwaren/enable-emmet-support-for-jsx-in-visual-studio-code-react-f1f5dfe8809c)
 * [js-beautify for VS Code](https://marketplace.visualstudio.com/items?itemName=HookyQR.beautify)
 
+## :file_folder: License
+
+* N/A
+
 ## :envelope: Contact
 
-* Repo created by [ABateman](https://www.andrewbateman.org) - you are welcome to [send me a message](https://andrewbateman.org/contact)
+* Repo created by [ABateman](https://github.com/AndrewJBateman), email: gomezbateman@yahoo.com
