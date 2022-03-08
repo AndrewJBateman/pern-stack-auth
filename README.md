@@ -40,11 +40,11 @@
 
 ## :signal_strength: Technologies - Backend
 
-* [PostgreSQL v12](https://www.postgresql.org/)
+* [PostgreSQL v14](https://www.postgresql.org/)
 * [PostgreSQL Installer for Windows](https://www.postgresqltutorial.com/install-postgresql/)
 * [Express.js middleware v4](https://expressjs.com/)
-* [Node.js v14](https://nodejs.org/es/)
-* [Nodemon](https://www.npmjs.com/package/nodemon) npm module so backend server will automatically restart after code changes
+* [Node.js v16](https://nodejs.org/es/)
+* [Nodemon v2](https://www.npmjs.com/package/nodemon) npm module so backend server will automatically restart after code changes
 * [Postman API](https://www.postman.com/downloads/) to simulate a frontend
 
 ## :signal_strength: Technologies - Frontend
